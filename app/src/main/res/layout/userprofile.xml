@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="76dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="29dp"
+            android:id="@+id/editText14"
+            android:hint="Flat/House no."
+            style="@style/Widget.AppCompat.EditText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editText18"
+            android:layout_below="@+id/editText14"
+            android:layout_alignLeft="@+id/editText14"
+            android:layout_alignStart="@+id/editText14"
+            android:hint="Street/Colony name" />
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/blood_group"
+            android:prompt="@string/Blood_Group"
+            android:popupBackground="#D0D3D4"
+            android:layout_marginTop="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/editText14"
+            android:layout_alignStart="@+id/editText14"
+            android:layout_width="214dp"
+            android:dropDownWidth="200dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/editText21"
+            android:layout_alignLeft="@+id/editText21"
+            android:layout_alignStart="@+id/editText21"
+            android:layout_marginTop="23dp"
+            android:id="@+id/editText22"
+            android:hint="State" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText24"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/editText23"
+            android:layout_alignLeft="@+id/editText23"
+            android:layout_alignStart="@+id/editText23"
+            android:hint="Emergency Contact Name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:layout_below="@+id/editText24"
+            android:layout_alignLeft="@+id/editText24"
+            android:layout_alignStart="@+id/editText24"
+            android:layout_marginTop="12dp"
+            android:id="@+id/editText25" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:layout_alignBottom="@+id/editText25"
+            android:layout_alignLeft="@+id/editText25"
+            android:layout_alignStart="@+id/editText25"
+            android:id="@+id/editText27"
+            android:hint="Emergency Contact No." />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText21"
+            android:layout_below="@+id/editText18"
+            android:layout_alignRight="@+id/spinner"
+            android:layout_alignEnd="@+id/spinner"
+            android:layout_marginTop="19dp"
+            android:hint="Country"
+            android:text="India" />
+
+        <Button
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText28"
+            android:layout_alignLeft="@+id/editText18"
+            android:layout_alignStart="@+id/editText18"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp"
+            android:id="@+id/button9"
+            android:layout_marginTop="50dp"
+            android:onClick="updateInfo"
+            style="@android:style/Widget.Button" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="13dp"
+            android:id="@+id/editText23"
+            android:hint="City (eg : Mumbai)"
+            android:layout_below="@+id/editText22"
+            android:layout_alignLeft="@+id/editText22"
+            android:layout_alignStart="@+id/editText22" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:layout_below="@+id/editText25"
+            android:layout_alignLeft="@+id/editText18"
+            android:layout_alignStart="@+id/editText18"
+            android:layout_marginTop="19dp"
+            android:id="@+id/editText28"
+            android:hint="Date for donating" />
+
+        <Button
+            android:text="D"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:layout_width="50dp"
+            android:layout_alignTop="@+id/editText28"
+            android:layout_toRightOf="@+id/editText28"
+            android:layout_toEndOf="@+id/editText28"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp" />
+
+    </RelativeLayout>
+</ScrollView>
